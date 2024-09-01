@@ -24,6 +24,36 @@ public class ContaBancaria{
 		System.out.println("Uma conta de usuario foi criada");
 	}
 	
+	public void adicionarSaldo(double valor){
+		if(valor > 0){
+			setSaldo(getSaldo + saldo);
+			
+			setExtrato(saldo);
+			
+			System.out.println("Valor removido, saldo atual: " + getSaldo());
+			
+		}else{
+		
+			System.out.println("Não foi possivel adicionar valor devido ao valor ser negativo");
+		}
+	}
+	
+	public void removerValor(double valor){
+		if(valor > getSaldo()){
+		
+			System.out.println("Não foi possivel retirar valor, pois o valor e maior que o saldo");
+			
+		}else{
+			
+			setSaldo(getSaldo() - valor);
+			
+			setExtrado(-valor);
+			
+			System.out.println("Valor removido, seu saldo atual e de: " + getSaldo()):
+		
+		}
+	}
+	
 	//--------------------------------------------------
 	public int getIdConta(){
 		return this.idConta;
