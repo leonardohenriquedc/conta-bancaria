@@ -48,7 +48,7 @@ public class ContaBancaria{
 			setSaldo(getSaldo() - valor);
 			
 			setExtrado(-valor);
-			
+				
 			System.out.println("Valor removido, seu saldo atual e de: " + getSaldo()):
 		
 		}
